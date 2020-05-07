@@ -1,5 +1,5 @@
 import argparse
-from os.path import dirname
+import os
 
 import chromedriver_binary
 from selenium import webdriver
