@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
+from webdriver_manager.chrome import ChromeDriverManager
 
 # ログイン情報を読み出し
 # get credentials
@@ -30,7 +31,7 @@ print("action_type = " + args_action_type)
 # initialize selenium webdriver
 options = webdriver.ChromeOptions()
 print('Starting a new session of Google Chrome')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 # 待機時間
 # wait time setting
