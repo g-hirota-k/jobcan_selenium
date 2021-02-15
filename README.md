@@ -3,6 +3,7 @@ https://id.jobcan.jp/ での打刻をターミナルから行うツール
 
 ### 動作環境 Requirements
 
+0. 筆者の用途上、GSuiteでのログインに限定した実装になっています、あしからず。  
 1. ローカル環境のGoogle ChromeでSeleniumのPythonバインディングを動かせること  
    特にこだわりがなければ、pipかpip3でインストールするのがおすすめです。  
    Environment where Selenium on Python + local(non-docker) Google Chrome web-driver can run  
